@@ -1,3 +1,10 @@
+order_colors = [
+    ['BLACK'],
+    ['GREY'],
+    ['BLACK', 'GRAY'],
+    []
+]
+
 def generation_new_order_data(color):    
     data = {
         "firstName": "Daria",

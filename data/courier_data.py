@@ -1,7 +1,7 @@
 import requests
 import random
 import string
-from data.URL import url, create_courier_endpoint
+from data.URL import create_courier_endpoint
 
 def generation_new_data_courier():
     letters = string.ascii_lowercase
@@ -26,7 +26,7 @@ def register_new_courier_and_return_login_password_name():
         "firstName": first_name
     }
 
-    response = requests.post(f"{url}{create_courier_endpoint}", data=payload)
+    response = requests.post(f"{create_courier_endpoint}", data=payload)
 
     if response.status_code == 201:
         login_pass.append(login)
