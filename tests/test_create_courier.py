@@ -7,8 +7,6 @@ from data.responses import create_courier_success, create_courier_duplicate_logi
 
 class TestCreateCourier:
 
-    # @fifxture
-
     @allure.title('Создание курьера')
     def test_create_courier(self, courier_cleanup):
         payload = generation_new_data_courier()
